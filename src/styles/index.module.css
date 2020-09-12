@@ -1,0 +1,29 @@
+.about{
+    font-size: 1.1rem;
+}
+.picture{
+    text-decoration: none;
+
+}
+.pictureGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+    grid-gap: 3rem;
+    align-items: start;
+}
+.pictureGrid>div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+}
+
+
+@media only screen and (min-width: 641px){
+    .pictureGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .pictureGrid>div:nth-child(even){
+        margin-top: 3rem;
+    }
+}
