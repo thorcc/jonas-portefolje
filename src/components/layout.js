@@ -18,6 +18,10 @@ export default function Layout({ children }) {
             <main className={classes.main}>
                 {children}
             </main>
+            <footer className={classes.footer}>
+                <hr></hr>
+                <p>designet av <a href="https://github.com/thorcc">thorcc</a></p>
+            </footer>
         </div>
     )
 }
