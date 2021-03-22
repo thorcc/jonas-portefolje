@@ -19,7 +19,7 @@ export default function Home({ data }) {
     const picLink = <Link className={classes.picture}
       to={pic.node.slug}
       >
-        <img src={pic.node.picture.file.url} alt={pic.node.picture.title} />
+        <img src={pic.node.picture.file.url  + "?fm=jpg&q=50"} alt={pic.node.picture.title} />
       </Link>;
     i % 2 === 0 ? leftPics.push(picLink) : rightPics.push(picLink);
   });
