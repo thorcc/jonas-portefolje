@@ -11,6 +11,9 @@ export default function Picture({ data }) {
     <Layout>
       <Helmet>
         <title>Jonas Ropstad - {pic.title}</title>
+        <meta name="description" content={pic.title}></meta>
+        <meta name="keywords" content="Kunst, Malerier"></meta>
+        <meta name="author" content="Jonas Ropstad"></meta>
       </Helmet>
       <div className={classes.picture}>
         <h1>{pic.title}</h1>
