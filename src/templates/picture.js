@@ -1,13 +1,17 @@
 import React from "react"
 import { graphql } from 'gatsby'
+import { Helmet } from "react-helmet";
 
 import Layout from "../components/layout"
 import classes from "../styles/picture.module.css"
 
 export default function Picture({ data }) {
-    const pic = data.contentfulPicture;
+  const pic = data.contentfulPicture;
   return (
     <Layout>
+      <Helmet>
+        <title>Jonas Ropstad - {pic.title}</title>
+      </Helmet>
       <div className={classes.picture}>
         <h1>{pic.title}</h1>
         <img src={pic.picture.file.url} alt={pic.title} />
